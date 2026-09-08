@@ -31,6 +31,11 @@ a {
   -webkit-tap-highlight-color: transparent;
 }
 
+button:not(:disabled),
+a[href] {
+  cursor: pointer;
+}
+
 ::selection {
   color: white;
   background: #2563eb;
