@@ -14,6 +14,7 @@ Aplicação web desenvolvida para a atividade de Front-end Engineering da FIAP. 
 - [Deploy](#deploy)
 - [Variáveis de ambiente](#variáveis-de-ambiente)
 - [Estrutura do projeto](#estrutura-do-projeto)
+- [Demonstração](#demonstração)
 - [Web Vitals](#web-vitals)
 - [Participantes](#participantes)
 - [Referências](#referências)
@@ -208,9 +209,44 @@ src/
 └── styles.css     # Tailwind CSS e estilos globais
 ```
 
+## Demonstração
+
+### Computador
+
+![Página inicial do FIAP Vocabulary em computador](docs/images/site-desktop.jpg)
+
+### Celular
+
+![Página inicial do FIAP Vocabulary em celular](docs/images/site-mobile.jpg)
+
 ## Web Vitals
 
-A análise do Lighthouse será realizada sobre a versão publicada da aplicação. O relatório ou uma captura dos resultados será adicionado nesta seção antes da entrega final.
+A versão publicada foi analisada pelo PageSpeed Insights em 8 de setembro de 2026, utilizando o Lighthouse 13.4.1. Os resultados abaixo são métricas de laboratório e podem variar conforme dispositivo, rede e momento da medição.
+
+### Resultados
+
+| Perfil | Desempenho | Acessibilidade | Práticas recomendadas | SEO |
+| --- | ---: | ---: | ---: | ---: |
+| Celular | 99 | 100 | 100 | 100 |
+| Computador | 100 | 100 | 100 | 100 |
+
+| Métrica | Celular | Computador |
+| --- | ---: | ---: |
+| First Contentful Paint (FCP) | 1,2 s | 0,3 s |
+| Largest Contentful Paint (LCP) | 2,0 s | 0,5 s |
+| Total Blocking Time (TBT) | 0 ms | 0 ms |
+| Cumulative Layout Shift (CLS) | 0,031 | 0,015 |
+| Speed Index | 2,7 s | 0,3 s |
+
+#### Celular
+
+![Resultado do PageSpeed Insights no celular](docs/images/pagespeed-mobile.png)
+
+#### Computador
+
+![Resultado do PageSpeed Insights no computador](docs/images/pagespeed-desktop.png)
+
+### Significado das métricas
 
 As principais métricas avaliadas incluem:
 
@@ -220,6 +256,8 @@ As principais métricas avaliadas incluem:
 - **First Contentful Paint (FCP):** tempo até a exibição do primeiro conteúdo na tela.
 - **Speed Index:** velocidade com que o conteúdo visível é apresentado.
 - **Total Blocking Time (TBT):** tempo em que a thread principal permanece bloqueada e não responde às interações.
+
+O INP não aparece nos resultados de laboratório acima porque depende de dados de uso real. No Lighthouse, o TBT funciona como uma aproximação da capacidade de resposta durante o carregamento.
 
 ## Participantes
 
